@@ -2,10 +2,13 @@
 import { authClient } from "@/lib/auth-client";
 import { Button } from "@heroui/react";
 import { Eye, EyeClosed, Loader } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast, ToastContainer } from "react-toastify";
+import googleIc from "@/assets/google-ico.png"
 
 const SignUpPage = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -17,6 +20,13 @@ const SignUpPage = () => {
         register,
     } = useForm();
 
+
+    const handleSignInG = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+    };
+
     const onSubmit = async (data) => {
         setIsLoading(true);
         const { name, email, password } = data;
@@ -27,24 +37,27 @@ const SignUpPage = () => {
             password: password,
             callbackURL: "/login"
         });
-        console.log(res, error);
-        
+
+
         if (error) {
-            alert(error.message);
-            return
-        }
+            toast.error(error.message);
+            const Button = document.getElementById('submitBtn');
+            Button.innerText = "Sign Up"
+            return;
+        };
         if (res) {
             alert("Signup successful");
             router.push('/login');
-        }
+        };
 
     };
 
     return (
         <div className="flex items-center justify-center min-h-[calc(100vh-128px)] px-8 py-12">
+            <ToastContainer />
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="bg-white border border-border rounded-2xl p-12 w-full max-w-md">
+                className="bg-white border border-border rounded-2xl p-12 w-full max-w-xl">
                 <div className="font-serif text-3xl text-center mb-1">Register a Account</div>
                 <div className="text-sm text-muted text-center mb-8">
                     Sign Up to borrow books and manage your reading
@@ -80,15 +93,37 @@ const SignUpPage = () => {
                     </span>
                     <div className="my-2 mb-6">Must be at least 8 characters with 1 uppercase and 1 number</div>
                 </fieldset>
-                <Button type="submit"
+                <Button type="submit" id="submitBtn"
                     isDisabled={isLoading}
-                    className={`w-full py-3 rounded-xl bg-amber text-ink font-bold text-base hover:bg-[#e09b12] transition-all flex items-center justify-center ${isLoading ? "" : "cursor-pointer"}`}>
+                    className={`w-full py-3 rounded-xl bg-amber text-ink font-bold text-base hover:bg-[#e09b12] transition-all flex items-center justify-center cursor-pointer`}>
                     {isLoading ? "Processing..." : "Sign Up"}
                     {isLoading && <Loader className="w-5 h-5 animate-spin" />}
                 </Button>
                 <div className="text-center mt-4 text-sm text-muted">
                     Already have an account?
                     <Link href={'/login'} className="text-amber font-semibold cursor-pointer">Log In</Link>
+                </div>
+
+
+                <div className="w-full max-w-md mx-auto">
+                    <div className="flex items-center my-6">
+                        <div className="grow h-px bg-gray-300"></div>
+                        <span className="mx-4 text-sm text-gray-500 font-medium">OR</span>
+                        <div className="grow h-px bg-gray-300"></div>
+                    </div>
+
+                    <Button
+                    onClick={handleSignInG}
+                    className="w-full flex items-center justify-center gap-3 py-3 rounded-xl bg-gray-100 hover:bg-gray-200 transition">
+                        <Image
+                            src={googleIc}
+                            alt="Google"
+                            className="w-5 h-5"
+                        />
+                        <span className="text-gray-700 font-medium">
+                            Login with Google
+                        </span>
+                    </Button>
                 </div>
             </form>
         </div>
