@@ -1,452 +1,455 @@
-[
-    {
-        "id": 1,
-        "title": "The Great Gatsby",
-        "author": "F. Scott Fitzgerald",
-        "description": "A classic novel set in the Roaring Twenties.",
-        "category": "Story",
-        "available_quantity": 3,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg"
-    },
-    {
-        "id": 2,
-        "title": "Clean Code",
-        "author": "Robert C. Martin",
-        "description": "A handbook of agile software craftsmanship.",
-        "category": "Tech",
-        "available_quantity": 4,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
-    },
-    {
-        "id": 3,
-        "title": "A Brief History of Time",
-        "author": "Stephen Hawking",
-        "description": "Exploration of the origins of the universe.",
-        "category": "Science",
-        "available_quantity": 5,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780553380163-L.jpg"
-    },
-    {
-        "id": 4,
-        "title": "The Hobbit",
-        "author": "J.R.R. Tolkien",
-        "description": "Bilbo Baggins embarks on an epic quest.",
-        "category": "Story",
-        "available_quantity": 6,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780345339683-L.jpg"
-    },
-    {
-        "id": 5,
-        "title": "The Pragmatic Programmer",
-        "author": "Andrew Hunt",
-        "description": "Essential lessons for modern software developers.",
-        "category": "Tech",
-        "available_quantity": 7,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780201616224-L.jpg"
-    },
-    {
-        "id": 6,
-        "title": "Cosmos",
-        "author": "Carl Sagan",
-        "description": "A scientific exploration of the universe.",
-        "category": "Science",
-        "available_quantity": 8,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780345331359-L.jpg"
-    },
-    {
-        "id": 7,
-        "title": "1984",
-        "author": "George Orwell",
-        "description": "A dystopian masterpiece examining surveillance.",
-        "category": "Story",
-        "available_quantity": 9,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg"
-    },
-    {
-        "id": 8,
-        "title": "Designing Data-Intensive Applications",
-        "author": "Martin Kleppmann",
-        "description": "Principles and trade-offs of modern data systems.",
-        "category": "Tech",
-        "available_quantity": 10,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9781449373320-L.jpg"
-    },
-    {
-        "id": 9,
-        "title": "The Selfish Gene",
-        "author": "Richard Dawkins",
-        "description": "A look at evolution from a gene-centered perspective.",
-        "category": "Science",
-        "available_quantity": 11,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780199291151-L.jpg"
-    },
-    {
-        "id": 10,
-        "title": "The Alchemist",
-        "author": "Paulo Coelho",
-        "description": "A fable about following one's dreams.",
-        "category": "Story",
-        "available_quantity": 12,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
-    },
-    {
-        "id": 11,
-        "title": "Refactoring",
-        "author": "Martin Fowler",
-        "description": "Improving the design of existing code.",
-        "category": "Tech",
-        "available_quantity": 13,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780201485677-L.jpg"
-    },
-    {
-        "id": 12,
-        "title": "Sapiens",
-        "author": "Yuval Noah Harari",
-        "description": "A brief history of humankind.",
-        "category": "Science",
-        "available_quantity": 14,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg"
-    },
-    {
-        "id": 13,
-        "title": "The Catcher in the Rye",
-        "author": "J.D. Salinger",
-        "description": "A teenage boy's journey through New York City.",
-        "category": "Story",
-        "available_quantity": 15,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780316769174-L.jpg"
-    },
-    {
-        "id": 14,
-        "title": "Introduction to Algorithms",
-        "author": "Thomas H. Cormen",
-        "description": "The standard reference for algorithms.",
-        "category": "Tech",
-        "available_quantity": 16,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780262033848-L.jpg"
-    },
-    {
-        "id": 15,
-        "title": "The Double Helix",
-        "author": "James D. Watson",
-        "description": "Discovery of the structure of DNA.",
-        "category": "Science",
-        "available_quantity": 17,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780743216302-L.jpg"
-    },
-    {
-        "id": 16,
-        "title": "To Kill a Mockingbird",
-        "author": "Harper Lee",
-        "description": "A novel about racial injustice.",
-        "category": "Story",
-        "available_quantity": 3,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780060935467-L.jpg"
-    },
-    {
-        "id": 17,
-        "title": "Eloquent JavaScript",
-        "author": "Marijn Haverbeke",
-        "description": "A modern introduction to programming.",
-        "category": "Tech",
-        "available_quantity": 4,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg"
-    },
-    {
-        "id": 18,
-        "title": "Astrophysics for People in a Hurry",
-        "author": "Neil deGrasse Tyson",
-        "description": "The basics of the universe explained.",
-        "category": "Science",
-        "available_quantity": 5,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780393609394-L.jpg"
-    },
-    {
-        "id": 19,
-        "title": "Brave New World",
-        "author": "Aldous Huxley",
-        "description": "A chilling vision of a futuristic society.",
-        "category": "Story",
-        "available_quantity": 6,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780060850524-L.jpg"
-    },
-    {
-        "id": 20,
-        "title": "Structure and Interpretation of Computer Programs",
-        "author": "Harold Abelson",
-        "description": "Foundational text on programming.",
-        "category": "Tech",
-        "available_quantity": 7,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780262510875-L.jpg"
-    },
-    {
-        "id": 21,
-        "title": "The Gene: An Intimate History",
-        "author": "Siddhartha Mukherjee",
-        "description": "The story of the quest to decipher human instructions.",
-        "category": "Science",
-        "available_quantity": 8,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9781476733500-L.jpg"
-    },
-    {
-        "id": 22,
-        "title": "The Road",
-        "author": "Cormac McCarthy",
-        "description": "A father and son walk through a post-apocalyptic landscape.",
-        "category": "Story",
-        "available_quantity": 9,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780307387899-L.jpg"
-    },
-    {
-        "id": 23,
-        "title": "You Don't Know JS Yet",
-        "author": "Kyle Simpson",
-        "description": "Diving deep into JavaScript.",
-        "category": "Tech",
-        "available_quantity": 10,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9781491904244-L.jpg"
-    },
-    {
-        "id": 24,
-        "title": "The Elegant Universe",
-        "author": "Brian Greene",
-        "description": "Superstrings, hidden dimensions.",
-        "category": "Science",
-        "available_quantity": 11,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780393338102-L.jpg"
-    },
-    {
-        "id": 25,
-        "title": "Lord of the Flies",
-        "author": "William Golding",
-        "description": "Schoolboys stranded on an island descend into savagery.",
-        "category": "Story",
-        "available_quantity": 12,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780399501487-L.jpg"
-    },
-    {
-        "id": 26,
-        "title": "Python Crash Course",
-        "author": "Eric Matthes",
-        "description": "A hands-on introduction to programming.",
-        "category": "Tech",
-        "available_quantity": 13,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9781593279288-L.jpg"
-    },
-    {
-        "id": 27,
-        "title": "Silent Spring",
-        "author": "Rachel Carson",
-        "description": "The book that launched the environmental movement.",
-        "category": "Science",
-        "available_quantity": 14,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780618249060-L.jpg"
-    },
-    {
-        "id": 28,
-        "title": "The Book Thief",
-        "author": "Markus Zusak",
-        "description": "A young girl in Nazi Germany finds comfort in books.",
-        "category": "Story",
-        "available_quantity": 15,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780375842207-L.jpg"
-    },
-    {
-        "id": 29,
-        "title": "Cracking the Coding Interview",
-        "author": "Gayle Laakmann McDowell",
-        "description": "Programming questions for interview prep.",
-        "category": "Tech",
-        "available_quantity": 16,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780984782857-L.jpg"
-    },
-    {
-        "id": 30,
-        "title": "The Origin of Species",
-        "author": "Charles Darwin",
-        "description": "The foundation of evolutionary biology.",
-        "category": "Science",
-        "available_quantity": 17,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780451529060-L.jpg"
-    },
-    {
-        "id": 31,
-        "title": "Frankenstein",
-        "author": "Mary Shelley",
-        "description": "A scientist creates a sentient creature.",
-        "category": "Story",
-        "available_quantity": 3,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780486282114-L.jpg"
-    },
-    {
-        "id": 32,
-        "title": "Soft Skills",
-        "author": "John Sonmez",
-        "description": "The software developer's life manual.",
-        "category": "Tech",
-        "available_quantity": 4,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9781617292392-L.jpg"
-    },
-    {
-        "id": 33,
-        "title": "The Sixth Extinction",
-        "author": "Elizabeth Kolbert",
-        "description": "An unnatural history of the current mass extinction.",
-        "category": "Science",
-        "available_quantity": 5,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9781250062185-L.jpg"
-    },
-    {
-        "id": 34,
-        "title": "One Hundred Years of Solitude",
-        "author": "Gabriel García Márquez",
-        "description": "The multi-generational story of the Buendía family.",
-        "category": "Story",
-        "available_quantity": 6,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780060883287-L.jpg"
-    },
-    {
-        "id": 35,
-        "title": "Code: The Hidden Language",
-        "author": "Charles Petzold",
-        "description": "Understanding how computers work.",
-        "category": "Tech",
-        "available_quantity": 7,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780735611313-L.jpg"
-    },
-    {
-        "id": 36,
-        "title": "When Breath Becomes Air",
-        "author": "Paul Kalanithi",
-        "description": "A neurosurgeon's memoir about facing mortality.",
-        "category": "Science",
-        "available_quantity": 8,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780812988406-L.jpg"
-    },
-    {
-        "id": 37,
-        "title": "Animal Farm",
-        "author": "George Orwell",
-        "description": "A satirical allegory about the Russian Revolution.",
-        "category": "Story",
-        "available_quantity": 9,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780451526342-L.jpg"
-    },
-    {
-        "id": 38,
-        "title": "The Mythical Man-Month",
-        "author": "Frederick P. Brooks Jr.",
-        "description": "Essays on software engineering.",
-        "category": "Tech",
-        "available_quantity": 10,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780201835953-L.jpg"
-    },
-    {
-        "id": 39,
-        "title": "Guns, Germs, and Steel",
-        "author": "Jared Diamond",
-        "description": "The fates of human societies.",
-        "category": "Science",
-        "available_quantity": 11,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780393317558-L.jpg"
-    },
-    {
-        "id": 40,
-        "title": "The Kite Runner",
-        "author": "Khaled Hosseini",
-        "description": "A story of betrayal and redemption set in Afghanistan.",
-        "category": "Story",
-        "available_quantity": 12,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9781594631931-L.jpg"
-    },
-    {
-        "id": 41,
-        "title": "Head First Design Patterns",
-        "author": "Eric Freeman",
-        "description": "A brain-friendly guide to software design patterns.",
-        "category": "Tech",
-        "available_quantity": 13,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780596007126-L.jpg"
-    },
-    {
-        "id": 42,
-        "title": "Thinking, Fast and Slow",
-        "author": "Daniel Kahneman",
-        "description": "Exploration of the two systems that drive thought.",
-        "category": "Science",
-        "available_quantity": 14,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780374533557-L.jpg"
-    },
-    {
-        "id": 43,
-        "title": "Pride and Prejudice",
-        "author": "Jane Austen",
-        "description": "The romantic clash between Elizabeth Bennet and Mr. Darcy.",
-        "category": "Story",
-        "available_quantity": 15,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg"
-    },
-    {
-        "id": 44,
-        "title": "Domain-Driven Design",
-        "author": "Eric Evans",
-        "description": "Tackling complexity in the heart of software.",
-        "category": "Tech",
-        "available_quantity": 16,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780321125217-L.jpg"
-    },
-    {
-        "id": 45,
-        "title": "The God Delusion",
-        "author": "Richard Dawkins",
-        "description": "A critique of religious faith from a scientific perspective.",
-        "category": "Science",
-        "available_quantity": 17,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780618918249-L.jpg"
-    },
-    {
-        "id": 46,
-        "title": "Slaughterhouse-Five",
-        "author": "Kurt Vonnegut",
-        "description": "An anti-war novel following Billy Pilgrim through time.",
-        "category": "Story",
-        "available_quantity": 3,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780385333849-L.jpg"
-    },
-    {
-        "id": 47,
-        "title": "Patterns of Enterprise Application Architecture",
-        "author": "Martin Fowler",
-        "description": "Solutions for common problems in enterprise development.",
-        "category": "Tech",
-        "available_quantity": 4,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780321127426-L.jpg"
-    },
-    {
-        "id": 48,
-        "title": "Entangled Life",
-        "author": "Merlin Sheldrake",
-        "description": "How fungi make our worlds and change our minds.",
-        "category": "Science",
-        "available_quantity": 5,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780525510321-L.jpg"
-    },
-    {
-        "id": 49,
-        "title": "The Picture of Dorian Gray",
-        "author": "Oscar Wilde",
-        "description": "A man sells his soul for eternal youth.",
-        "category": "Story",
-        "available_quantity": 6,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780141439570-L.jpg"
-    },
-    {
-        "id": 50,
-        "title": "Working Effectively with Legacy Code",
-        "author": "Michael Feathers",
-        "description": "Strategies for working with large, untested codebases.",
-        "category": "Tech",
-        "available_quantity": 7,
-        "image_url": "https://covers.openlibrary.org/b/isbn/9780131177055-L.jpg"
-    }
-]
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "description": "A classic novel set in the Roaring Twenties.",
+            "category": "Story",
+            "available_quantity": 3,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Clean Code",
+            "author": "Robert C. Martin",
+            "description": "A handbook of agile software craftsmanship.",
+            "category": "Tech",
+            "available_quantity": 4,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
+        },
+        {
+            "id": 3,
+            "title": "A Brief History of Time",
+            "author": "Stephen Hawking",
+            "description": "Exploration of the origins of the universe.",
+            "category": "Science",
+            "available_quantity": 5,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780553380163-L.jpg"
+        },
+        {
+            "id": 4,
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "description": "Bilbo Baggins embarks on an epic quest.",
+            "category": "Story",
+            "available_quantity": 6,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780345339683-L.jpg"
+        },
+        {
+            "id": 5,
+            "title": "The Pragmatic Programmer",
+            "author": "Andrew Hunt",
+            "description": "Essential lessons for modern software developers.",
+            "category": "Tech",
+            "available_quantity": 7,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780201616224-L.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Cosmos",
+            "author": "Carl Sagan",
+            "description": "A scientific exploration of the universe.",
+            "category": "Science",
+            "available_quantity": 8,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780345331359-L.jpg"
+        },
+        {
+            "id": 7,
+            "title": "1984",
+            "author": "George Orwell",
+            "description": "A dystopian masterpiece examining surveillance.",
+            "category": "Story",
+            "available_quantity": 9,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg"
+        },
+        {
+            "id": 8,
+            "title": "Designing Data-Intensive Applications",
+            "author": "Martin Kleppmann",
+            "description": "Principles and trade-offs of modern data systems.",
+            "category": "Tech",
+            "available_quantity": 10,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9781449373320-L.jpg"
+        },
+        {
+            "id": 9,
+            "title": "The Selfish Gene",
+            "author": "Richard Dawkins",
+            "description": "A look at evolution from a gene-centered perspective.",
+            "category": "Science",
+            "available_quantity": 11,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780199291151-L.jpg"
+        },
+        {
+            "id": 10,
+            "title": "The Alchemist",
+            "author": "Paulo Coelho",
+            "description": "A fable about following one's dreams.",
+            "category": "Story",
+            "available_quantity": 12,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+        },
+        {
+            "id": 11,
+            "title": "Refactoring",
+            "author": "Martin Fowler",
+            "description": "Improving the design of existing code.",
+            "category": "Tech",
+            "available_quantity": 13,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780201485677-L.jpg"
+        },
+        {
+            "id": 12,
+            "title": "Sapiens",
+            "author": "Yuval Noah Harari",
+            "description": "A brief history of humankind.",
+            "category": "Science",
+            "available_quantity": 14,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg"
+        },
+        {
+            "id": 13,
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "description": "A teenage boy's journey through New York City.",
+            "category": "Story",
+            "available_quantity": 15,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780316769174-L.jpg"
+        },
+        {
+            "id": 14,
+            "title": "Introduction to Algorithms",
+            "author": "Thomas H. Cormen",
+            "description": "The standard reference for algorithms.",
+            "category": "Tech",
+            "available_quantity": 16,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780262033848-L.jpg"
+        },
+        {
+            "id": 15,
+            "title": "The Double Helix",
+            "author": "James D. Watson",
+            "description": "Discovery of the structure of DNA.",
+            "category": "Science",
+            "available_quantity": 17,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780743216302-L.jpg"
+        },
+        {
+            "id": 16,
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "description": "A novel about racial injustice.",
+            "category": "Story",
+            "available_quantity": 3,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780060935467-L.jpg"
+        },
+        {
+            "id": 17,
+            "title": "Eloquent JavaScript",
+            "author": "Marijn Haverbeke",
+            "description": "A modern introduction to programming.",
+            "category": "Tech",
+            "available_quantity": 4,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg"
+        },
+        {
+            "id": 18,
+            "title": "Astrophysics for People in a Hurry",
+            "author": "Neil deGrasse Tyson",
+            "description": "The basics of the universe explained.",
+            "category": "Science",
+            "available_quantity": 5,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780393609394-L.jpg"
+        },
+        {
+            "id": 19,
+            "title": "Brave New World",
+            "author": "Aldous Huxley",
+            "description": "A chilling vision of a futuristic society.",
+            "category": "Story",
+            "available_quantity": 6,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780060850524-L.jpg"
+        },
+        {
+            "id": 20,
+            "title": "Structure and Interpretation of Computer Programs",
+            "author": "Harold Abelson",
+            "description": "Foundational text on programming.",
+            "category": "Tech",
+            "available_quantity": 7,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780262510875-L.jpg"
+        },
+        {
+            "id": 21,
+            "title": "The Gene: An Intimate History",
+            "author": "Siddhartha Mukherjee",
+            "description": "The story of the quest to decipher human instructions.",
+            "category": "Science",
+            "available_quantity": 8,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9781476733500-L.jpg"
+        },
+        {
+            "id": 22,
+            "title": "The Road",
+            "author": "Cormac McCarthy",
+            "description": "A father and son walk through a post-apocalyptic landscape.",
+            "category": "Story",
+            "available_quantity": 9,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780307387899-L.jpg"
+        },
+        {
+            "id": 23,
+            "title": "You Don't Know JS Yet",
+            "author": "Kyle Simpson",
+            "description": "Diving deep into JavaScript.",
+            "category": "Tech",
+            "available_quantity": 10,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9781491904244-L.jpg"
+        },
+        {
+            "id": 24,
+            "title": "The Elegant Universe",
+            "author": "Brian Greene",
+            "description": "Superstrings, hidden dimensions.",
+            "category": "Science",
+            "available_quantity": 11,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780393338102-L.jpg"
+        },
+        {
+            "id": 25,
+            "title": "Lord of the Flies",
+            "author": "William Golding",
+            "description": "Schoolboys stranded on an island descend into savagery.",
+            "category": "Story",
+            "available_quantity": 12,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780399501487-L.jpg"
+        },
+        {
+            "id": 26,
+            "title": "Python Crash Course",
+            "author": "Eric Matthes",
+            "description": "A hands-on introduction to programming.",
+            "category": "Tech",
+            "available_quantity": 13,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9781593279288-L.jpg"
+        },
+        {
+            "id": 27,
+            "title": "Silent Spring",
+            "author": "Rachel Carson",
+            "description": "The book that launched the environmental movement.",
+            "category": "Science",
+            "available_quantity": 14,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780618249060-L.jpg"
+        },
+        {
+            "id": 28,
+            "title": "The Book Thief",
+            "author": "Markus Zusak",
+            "description": "A young girl in Nazi Germany finds comfort in books.",
+            "category": "Story",
+            "available_quantity": 15,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780375842207-L.jpg"
+        },
+        {
+            "id": 29,
+            "title": "Cracking the Coding Interview",
+            "author": "Gayle Laakmann McDowell",
+            "description": "Programming questions for interview prep.",
+            "category": "Tech",
+            "available_quantity": 16,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780984782857-L.jpg"
+        },
+        {
+            "id": 30,
+            "title": "The Origin of Species",
+            "author": "Charles Darwin",
+            "description": "The foundation of evolutionary biology.",
+            "category": "Science",
+            "available_quantity": 17,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780451529060-L.jpg"
+        },
+        {
+            "id": 31,
+            "title": "Frankenstein",
+            "author": "Mary Shelley",
+            "description": "A scientist creates a sentient creature.",
+            "category": "Story",
+            "available_quantity": 3,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780486282114-L.jpg"
+        },
+        {
+            "id": 32,
+            "title": "Soft Skills",
+            "author": "John Sonmez",
+            "description": "The software developer's life manual.",
+            "category": "Tech",
+            "available_quantity": 4,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9781617292392-L.jpg"
+        },
+        {
+            "id": 33,
+            "title": "The Sixth Extinction",
+            "author": "Elizabeth Kolbert",
+            "description": "An unnatural history of the current mass extinction.",
+            "category": "Science",
+            "available_quantity": 5,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9781250062185-L.jpg"
+        },
+        {
+            "id": 34,
+            "title": "One Hundred Years of Solitude",
+            "author": "Gabriel García Márquez",
+            "description": "The multi-generational story of the Buendía family.",
+            "category": "Story",
+            "available_quantity": 6,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780060883287-L.jpg"
+        },
+        {
+            "id": 35,
+            "title": "Code: The Hidden Language",
+            "author": "Charles Petzold",
+            "description": "Understanding how computers work.",
+            "category": "Tech",
+            "available_quantity": 7,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780735611313-L.jpg"
+        },
+        {
+            "id": 36,
+            "title": "When Breath Becomes Air",
+            "author": "Paul Kalanithi",
+            "description": "A neurosurgeon's memoir about facing mortality.",
+            "category": "Science",
+            "available_quantity": 8,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780812988406-L.jpg"
+        },
+        {
+            "id": 37,
+            "title": "Animal Farm",
+            "author": "George Orwell",
+            "description": "A satirical allegory about the Russian Revolution.",
+            "category": "Story",
+            "available_quantity": 9,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780451526342-L.jpg"
+        },
+        {
+            "id": 38,
+            "title": "The Mythical Man-Month",
+            "author": "Frederick P. Brooks Jr.",
+            "description": "Essays on software engineering.",
+            "category": "Tech",
+            "available_quantity": 10,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780201835953-L.jpg"
+        },
+        {
+            "id": 39,
+            "title": "Guns, Germs, and Steel",
+            "author": "Jared Diamond",
+            "description": "The fates of human societies.",
+            "category": "Science",
+            "available_quantity": 11,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780393317558-L.jpg"
+        },
+        {
+            "id": 40,
+            "title": "The Kite Runner",
+            "author": "Khaled Hosseini",
+            "description": "A story of betrayal and redemption set in Afghanistan.",
+            "category": "Story",
+            "available_quantity": 12,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9781594631931-L.jpg"
+        },
+        {
+            "id": 41,
+            "title": "Head First Design Patterns",
+            "author": "Eric Freeman",
+            "description": "A brain-friendly guide to software design patterns.",
+            "category": "Tech",
+            "available_quantity": 13,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780596007126-L.jpg"
+        },
+        {
+            "id": 42,
+            "title": "Thinking, Fast and Slow",
+            "author": "Daniel Kahneman",
+            "description": "Exploration of the two systems that drive thought.",
+            "category": "Science",
+            "available_quantity": 14,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780374533557-L.jpg"
+        },
+        {
+            "id": 43,
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "description": "The romantic clash between Elizabeth Bennet and Mr. Darcy.",
+            "category": "Story",
+            "available_quantity": 15,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg"
+        },
+        {
+            "id": 44,
+            "title": "Domain-Driven Design",
+            "author": "Eric Evans",
+            "description": "Tackling complexity in the heart of software.",
+            "category": "Tech",
+            "available_quantity": 16,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780321125217-L.jpg"
+        },
+        {
+            "id": 45,
+            "title": "The God Delusion",
+            "author": "Richard Dawkins",
+            "description": "A critique of religious faith from a scientific perspective.",
+            "category": "Science",
+            "available_quantity": 17,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780618918249-L.jpg"
+        },
+        {
+            "id": 46,
+            "title": "Slaughterhouse-Five",
+            "author": "Kurt Vonnegut",
+            "description": "An anti-war novel following Billy Pilgrim through time.",
+            "category": "Story",
+            "available_quantity": 3,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780385333849-L.jpg"
+        },
+        {
+            "id": 47,
+            "title": "Patterns of Enterprise Application Architecture",
+            "author": "Martin Fowler",
+            "description": "Solutions for common problems in enterprise development.",
+            "category": "Tech",
+            "available_quantity": 4,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780321127426-L.jpg"
+        },
+        {
+            "id": 48,
+            "title": "Entangled Life",
+            "author": "Merlin Sheldrake",
+            "description": "How fungi make our worlds and change our minds.",
+            "category": "Science",
+            "available_quantity": 5,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780525510321-L.jpg"
+        },
+        {
+            "id": 49,
+            "title": "The Picture of Dorian Gray",
+            "author": "Oscar Wilde",
+            "description": "A man sells his soul for eternal youth.",
+            "category": "Story",
+            "available_quantity": 6,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780141439570-L.jpg"
+        },
+        {
+            "id": 50,
+            "title": "Working Effectively with Legacy Code",
+            "author": "Michael Feathers",
+            "description": "Strategies for working with large, untested codebases.",
+            "category": "Tech",
+            "available_quantity": 7,
+            "image_url": "https://covers.openlibrary.org/b/isbn/9780131177055-L.jpg"
+        }
+    ]
+}
