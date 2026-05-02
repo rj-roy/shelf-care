@@ -4,28 +4,54 @@ export default function useBookSearch() {
     const [allBooks, setAllBooks] = useState([]);
     const [query, setQuery] = useState("");
     const [results, setResults] = useState([]);
+    const [searchQuery, setSearchQuery] = useState("");
+
 
     useEffect(() => {
         const res = fetch('https://shelf-care-jsr.onrender.com/data')
             .then((res) => res.json())
             .then((data) => {
                 setAllBooks(data);
+                setResults(data)
             });
     }, []);
 
+    const handleCateg = (cate) => {
+        const filtered = allBooks.filter((book) =>
+            book.category.toLowerCase().includes(cate)
+        );
+        setResults(filtered);
+        setQuery(cate);
+    }
+
     useEffect(() => {
-        if (!query) {
+        if (!searchQuery) {
+            const categoryFiltered = allBooks.filter((book) =>
+                book.category.toLowerCase().includes(query)
+            );
             // eslint-disable-next-line react-hooks/set-state-in-effect
-            setResults(allBooks);
+            setResults(categoryFiltered);
             return;
         }
-
-        const filtered = allBooks.filter((book) =>
-            book.category.toLowerCase().includes(query.toLowerCase())
+        const sFiltered = results.filter((book) =>
+            book.title.toLowerCase().includes(searchQuery.toLowerCase())
         );
+        setResults(sFiltered);
+    }, [searchQuery, query, allBooks]);
 
-        setResults(filtered);
-    }, [query, allBooks]);
+    // useEffect(() => {
+    //     if (!query) {
+    //         // eslint-disable-next-line react-hooks/set-state-in-effect
+    //         setResults(allBooks);
+    //         return;
+    //     }
+
+    //     const filtered = allBooks.filter((book) =>
+    //         book.category.toLowerCase().includes(query.toLowerCase())
+    //     );
+
+    //     setResults(filtered);
+    // }, [query, allBooks]);
 
     // useEffect(() => {
     //         const filteredByCate = allBooks.filter((book) =>
@@ -37,9 +63,12 @@ export default function useBookSearch() {
 
     return {
         query,
+        setQuery,
         results,
         setResults,
-        setQuery,
         allBooks,
+        handleCateg,
+        searchQuery,
+        setSearchQuery,
     };
 }

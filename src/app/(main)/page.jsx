@@ -1,5 +1,7 @@
 import Featured from "@/components/home/Featured";
 import Hero from "@/components/home/Hero";
+import LovedBy from "@/components/home/LovedBy";
+import ReadingClubs from "@/components/home/ReadingClubs";
 import MarqueLoader from "@/components/loader/MarqueLoader";
 import Marque from "@/components/shared/Marque";
 import { books } from "@/lib/data";
@@ -16,6 +18,8 @@ const Home = async () => {
       <Suspense fallback={ <div>Loading featured...</div> }>
         <Featured/>
       </Suspense>
+      <ReadingClubs/>
+      <LovedBy/>
     </div>
   );
 };

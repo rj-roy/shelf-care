@@ -1,7 +1,6 @@
 'use client'
 import BooksCard from "@/components/ui/BooksCard";
 import useBookSearch from "@/hooks/useBookSearch";
-import { useEffect, useState } from "react";
 
 const AllbooksPage = () => {
     const {
@@ -9,9 +8,12 @@ const AllbooksPage = () => {
         setQuery,
         results,
         setResults,
-        allBooks, } = useBookSearch();
+        handleCateg,
+        allBooks,
+        searchQuery,
+        setSearchQuery
+    } = useBookSearch();
 
-    const [searchQuery, setSearchQuery] = useState("");
 
     const lenOfSt = allBooks.filter((b) =>
         b.category.toLowerCase().includes("story")
@@ -23,24 +25,15 @@ const AllbooksPage = () => {
         b.category.toLowerCase().includes("science")
     );
 
-    useEffect(() => {
-        if (searchQuery) {
-            const sFiltered = allBooks.filter((book) =>
-                book.title.toLowerCase().includes(searchQuery.toLowerCase())
-            );
-            setResults(sFiltered);
-        }
-    }, [searchQuery, allBooks, setResults]);
-
 
     return (
         <div className="">
             <div className="max-w-6xl mx-auto px-8 py-8 grid grid-cols-1 sm:grid-cols-12 gap-8">
-                <aside className="shrink-0 col-span-4">
-                    <div className="bg-white border border-border rounded-xl p-5 sticky top-20">
+                <aside className="shrink-0 col-span-4 hidden sm:block">
+                    <div className="bg-white border border-border rounded-xl p-5 sticky top-20 min-h-[80dvh]">
                         <div className="font-serif text-base mb-4 pb-3 border-b border-border">Categories</div>
                         <button
-                            onClick={() => setQuery("")}
+                            onClick={() => handleCateg('')}
                             className={`${query === "" ? "bg-amber-light text-amber-dark " : "bg-transparent"} cat-btn w-full text-left px-3 py-2 rounded-lg border-none text-sm text-muted font-medium mb-1 hover:bg-amber-light hover:text-amber-dark transition-all`}>
                             All
                             <span className="float-right text-xs bg-cream px-1.5 py-0.5 rounded text-muted">
@@ -48,7 +41,7 @@ const AllbooksPage = () => {
                             </span>
                         </button>
                         <button
-                            onClick={() => setQuery('story')}
+                            onClick={() => handleCateg('story')}
                             className={`${query === "story" ? "bg-amber-light text-amber-dark " : "bg-transparent"} cat-btn w-full text-left px-3 py-2 rounded-lg border-none text-sm text-muted font-medium mb-1 hover:bg-amber-light hover:text-amber-dark transition-all`}>
                             Story
                             <span className="float-right text-xs bg-cream px-1.5 py-0.5 rounded text-muted">
@@ -56,14 +49,14 @@ const AllbooksPage = () => {
                             </span>
                         </button>
 
-                        <button onClick={() => setQuery('tech')}
+                        <button onClick={() => handleCateg('tech')}
                             className={`${query === "tech" ? "bg-amber-light text-amber-dark " : "bg-transparent"} cat-btn w-full text-left px-3 py-2 rounded-lg border-none text-sm text-muted font-medium mb-1 hover:bg-amber-light hover:text-amber-dark transition-all`}>
                             Tech
                             <span className="float-right text-xs bg-cream px-1.5 py-0.5 rounded text-muted">
                                 {lenOfTe.length}
                             </span>
                         </button>
-                        <button onClick={() => setQuery('science')}
+                        <button onClick={() => handleCateg('science')}
                             className={`${query === "science" ? "bg-amber-light text-amber-dark " : "bg-transparent"} cat-btn w-full text-left px-3 py-2 rounded-lg border-none text-sm text-muted font-medium mb-1 hover:bg-amber-light hover:text-amber-dark transition-all`}>
                             Science
                             <span className="float-right text-xs bg-cream px-1.5 py-0.5 rounded text-muted">
@@ -84,7 +77,7 @@ const AllbooksPage = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                             {
                                 results.map((bo, i) => (
-                                    <BooksCard className="mx-5 w-full" key={i} book={bo} />
+                                    <BooksCard className="w-full" key={i} book={bo} />
                                 ))
                             }
                         </div>
