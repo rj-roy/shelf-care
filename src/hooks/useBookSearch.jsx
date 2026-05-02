@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 export default function useBookSearch() {
-
     const [allBooks, setAllBooks] = useState([]);
     const [query, setQuery] = useState("");
     const [results, setResults] = useState([]);
@@ -11,22 +10,36 @@ export default function useBookSearch() {
             .then((res) => res.json())
             .then((data) => {
                 setAllBooks(data);
-                setResults(data);
             });
     }, []);
 
     useEffect(() => {
-        const filteredByCate = allBooks.filter((book) =>
+        if (!query) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
+            setResults(allBooks);
+            return;
+        }
+
+        const filtered = allBooks.filter((book) =>
             book.category.toLowerCase().includes(query.toLowerCase())
         );
-        // eslint-disable-next-line react-hooks/set-state-in-effect
-        setResults(filteredByCate);
+
+        setResults(filtered);
     }, [query, allBooks]);
 
+    // useEffect(() => {
+    //         const filteredByCate = allBooks.filter((book) =>
+    //             book.category.toLowerCase().includes(query.toLowerCase())
+    //         );
+    //         // eslint-disable-next-line react-hooks/set-state-in-effect
+    //         setResults(filteredByCate);
+    //     }, [query, allBooks]);
+
     return {
-    query,
-    setQuery,
-    results,
-    allBooks,
-  };
+        query,
+        results,
+        setResults,
+        setQuery,
+        allBooks,
+    };
 }

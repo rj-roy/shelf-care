@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${dmSans.variable} h-full antialiased`}
+      className={`${playfair.variable} ${dmSans.variable} h-full antialiased bg-parchment`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

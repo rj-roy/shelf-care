@@ -10,7 +10,7 @@ const Marque = async () => {
                 <Marquee pauseOnHover={true} speed={100}>
                     {allbooks.map((n) => (
                         <div key={n._id} className="flex" >
-                            <Link href={'/books/id'} className="mx-3">{n.title}</Link>
+                            <Link href={`/all-books/${n.slug}`} className="mx-3">{n.title}</Link>
                             <div className=" w-0.5 h-5 bg-ink"></div>
                         </div>
                     ))}
