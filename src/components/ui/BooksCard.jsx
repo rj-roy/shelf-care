@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const BooksCard = ({ book }) => {
+const BooksCard = ({ book, className = "" }) => {
     return (
-        <Link href={`/all-books/${book.slug}`} className="bg-white rounded-xl border border-gray-200 overflow-hidden transition-all duration-200 hover:shadow-xl hover:scale-[1.02] cursor-pointer w-65">
+        <Link href={`/all-books/${book.slug}`} className={`bg-white rounded-xl border border-gray-200 overflow-hidden transition-all duration-200 hover:shadow-xl hover:scale-[1.02] cursor-pointer w-full ${className}`}>
             <div className="relative h-72 bg-purple-700 flex items-center justify-center">
                 <span className="absolute top-3 left-3 bg-amber-500 text-black text-xs font-bold px-2 py-1 rounded">
                     {book.category}

@@ -34,7 +34,7 @@ const Hero = async () => {
                             className="bg-amber text-ink font-bold text-base px-8 py-3 rounded-lg border-none hover:bg-[#e09b12] hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center">
                             Browse Now
                         </Link>
-                        <Link href={session ? '/featured' : '/signup'}
+                        <Link href={session ? '/' : '/signup'}
                             className="bg-transparent border border-[#5a4a34] text-[#c8b89a] font-medium text-base px-7 py-3 rounded-lg hover:border-[#a89278] hover:text-white transition-all w-full sm:w-auto text-center">
                             {
                                 session ? "Featured Books" : "Join Free"
